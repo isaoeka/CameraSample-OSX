@@ -24,7 +24,6 @@ class ViewController: NSViewController {
         self.captureSession.sessionPreset = AVCaptureSession.Preset.low
         
         let devices = AVCaptureDevice.devices(for: AVMediaType.video)
-        dump(devices)
         self.captureDevice = devices.first
         
         if let captureDevice = self.captureDevice {
